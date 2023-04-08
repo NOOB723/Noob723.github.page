@@ -1,0 +1,63 @@
+body {
+  background-image: url('Fondo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+  width: max-content;
+  margin: 100px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 100px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background-image: linear-gradient(to right, #ffffff);
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.submit {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#boton-login {
+  background-color: #0078D7;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#boton-login:hover {
+  background-color: #005A9E;
+}
+.input-group input, 
+.input-group select {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

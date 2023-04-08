@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <link rel="shortcut icon" href="Imagenes\logo.jpg">
+    <link rel="stylesheet" href="estilos.css">
+    <script>
+        function validarFormulario() {
+            var usuario = document.forms["formLogin"]["usuario"].value;
+            var contrasena = document.forms["formLogin"]["contrasena"].value;
+            if (usuario == "" || contrasena == "") {
+                alert("Por favor, ingrese su usuario y contraseña");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h1 title="Esto se verá al pasar el cursor">iNikyoX Corporation</h1>
+        <form name="formLogin" action="login.php" method="POST" onsubmit="return validarFormulario()">
+            <div class="input-group">
+                <label for="usuario">USUARIO</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario">
+            </div>
+            <div class="input-group">
+                <label for="contrasena">CONTRASEÑA</label>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña">
+            </div>
+            <div class="submit">
+                <input type="submit" value="Iniciar Sesión" id="boton-login">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
